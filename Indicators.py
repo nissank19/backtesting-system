@@ -8,5 +8,6 @@ class Indicators:
     @staticmethod
     def EMA(df,window): # trend of an asset by giving more weight to recent price data
         df[f"EMA_{window}"]=df['adj_close'].ewm(span=20, adjust=False).mean()
+        return df
 
 

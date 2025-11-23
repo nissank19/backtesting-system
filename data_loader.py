@@ -24,10 +24,7 @@ class Data_loader:
         df['log_return']=np.log((df["adj_close"]/df["adj_close"].shift(1)))
         df = df.dropna(subset=['return', 'log_return']) #drops first cuz both empty
         return df
-loader = Data_loader("AAPL")       # create instance
-df = loader.load()                 # download and clean data
-df = loader.returns(df)            # compute returns
-print(df.head())
+
 
 
 
