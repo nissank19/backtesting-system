@@ -36,3 +36,4 @@ if __name__ == "__main__":
 
     nspect = Signal()
     nspect.inspect(df, "EMA_10")
+##up next  Simulate positions → Calculate portfolio value → Adjust for costs → Compute metrics → Visualize → Refine strategy
