@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="359721c3-10eb-4db0-ba13-006eb0e9597f" name="Changes" comment="signals done, plus tested">
-      <change afterPath="$PROJECT_DIR$/Backtester.py" afterDir="false" />
+    <list default="true" id="359721c3-10eb-4db0-ba13-006eb0e9597f" name="Changes" comment="Buy and sell+ portfolio value history for future studies">
+      <change afterPath="$PROJECT_DIR$/Performance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Signal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Signal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backtester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backtester.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,16 +45,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Signal.executor": "Run",
-    "Python.data_loader.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/fabia/Documents/backtesting-system",
-    "settings.editor.selected.configurable": "editor.preferences.completion"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Signal.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_loader.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fabia/Documents/backtesting-system&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,12 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1763902205309</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Buy and sell+ portfolio value history for future studies">
+      <option name="closed" value="true" />
+      <created>1763989347577</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763989347577</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ema done" />
     <MESSAGE value="signals done, plus tested" />
-    <option name="LAST_COMMIT_MESSAGE" value="signals done, plus tested" />
+    <MESSAGE value="Buy and sell+ portfolio value history for future studies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buy and sell+ portfolio value history for future studies" />
   </component>
 </project>

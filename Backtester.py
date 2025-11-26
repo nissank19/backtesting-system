@@ -6,10 +6,12 @@ class Backtester:
         for index, row in df.iterrows():
             if row["signal"]==1:
                 self.buy(row["adj_close"])
-                self.portfolio_value_history.append((self.cash,self.share*row["adj_close"]))
+                total=self.cash+self.share*row["adj_close"]
+                self.portfolio_value_history.append(total)
             elif row["signal"]==-1:
                 self.sell(row["adj_close"])
-                self.portfolio_value_history((self.cash, self.share*row["adj_close"]))
+                total = self.cash + self.share *row ["adj_close"]
+                self.portfolio_value_history.append(total)
             else: print("hold")
 
 
@@ -31,3 +33,9 @@ class Backtester:
             sharstosellprice=self.share*price
             self.cash+=sharstosellprice
             self.share=0
+
+    def returns(self):
+        inital=self.portfolio_value_history[0]
+        final=self.portfolio_value_history[-1]
+        return (final-inital)/inital
+
