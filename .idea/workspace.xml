@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="359721c3-10eb-4db0-ba13-006eb0e9597f" name="Changes" comment="volatility, returns" />
+    <list default="true" id="359721c3-10eb-4db0-ba13-006eb0e9597f" name="Changes" comment="changed returns to totalreturn">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Performance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Performance.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764160084192</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed returns to totalreturn">
+      <option name="closed" value="true" />
+      <created>1764160322630</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764160322630</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -107,6 +118,7 @@
     <MESSAGE value="signals done, plus tested" />
     <MESSAGE value="Buy and sell+ portfolio value history for future studies" />
     <MESSAGE value="volatility, returns" />
-    <option name="LAST_COMMIT_MESSAGE" value="volatility, returns" />
+    <MESSAGE value="changed returns to totalreturn" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed returns to totalreturn" />
   </component>
 </project>

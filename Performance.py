@@ -10,11 +10,22 @@ class Performance():
         final= self.portfolio_value_history[-1]
         return (final-inital)/inital
 
+    def get_daily_returns(self):
+        daily_returns = []
+        for i in range(1, len(self.portfolio_value_history)):
+            today = self.portfolio_value_history[i]
+            yesterday = self.portfolio_value_history[i - 1]
+            daily_returns.append((today / yesterday) - 1)
+        return daily_returns
+
     def volatility(self):
-        daily_returns=[]
-        for i in range(1,len(self.portfolio_value_history)):
-            todaysvalue=self.portfolio_value_history[i]
-            yesterday=self.portfolio_value_history[i-1]
-            daily_return=(todaysvalue/yesterday)-1
-            daily_returns.append(daily_return)
-        return numpy.std(daily_returns)
+        returns = self.get_daily_returns()
+        return numpy.std(returns)
+
+    def sharpratio(self,riskfreerate=0):
+        sharpie=(numpy.mean(self.get_daily_returns())-riskfreerate)/numpy.std(self.get_daily_returns())
+
+
+
+
+
