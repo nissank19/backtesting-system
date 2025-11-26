@@ -5,7 +5,7 @@ class Performance():
     def __init__(self,portfolio_value_history):
         self.portfolio_value_history=portfolio_value_history
 
-    def returns(self):
+    def totalreturns(self):
         inital= self.portfolio_value_history[0]
         final= self.portfolio_value_history[-1]
         return (final-inital)/inital
