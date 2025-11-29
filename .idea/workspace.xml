@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="359721c3-10eb-4db0-ba13-006eb0e9597f" name="Changes" comment="changed returns to totalreturn">
+    <list default="true" id="359721c3-10eb-4db0-ba13-006eb0e9597f" name="Changes" comment="sharp ratio implemented (mean-riskfree)/std">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Performance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Performance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_loader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Signal.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_loader.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/fabia/Documents/backtesting-system&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Performance.executor": "Run",
+    "Python.Signal.executor": "Run",
+    "Python.data_loader.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/fabia/Documents/backtesting-system",
+    "settings.editor.selected.configurable": "editor.preferences.completion"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -110,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764160322630</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sharp ratio implemented (mean-riskfree)/std">
+      <option name="closed" value="true" />
+      <created>1764182035773</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764182035773</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -119,6 +129,7 @@
     <MESSAGE value="Buy and sell+ portfolio value history for future studies" />
     <MESSAGE value="volatility, returns" />
     <MESSAGE value="changed returns to totalreturn" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed returns to totalreturn" />
+    <MESSAGE value="sharp ratio implemented (mean-riskfree)/std" />
+    <option name="LAST_COMMIT_MESSAGE" value="sharp ratio implemented (mean-riskfree)/std" />
   </component>
 </project>
