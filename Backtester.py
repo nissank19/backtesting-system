@@ -1,4 +1,4 @@
-class Backtester:
+class backtester:
     def runback(self,df,inital=1000,share=0):
         self.portfolio_value_history = []
         self.cash=inital

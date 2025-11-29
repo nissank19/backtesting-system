@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from Indicators import Indicators as ind
+from Indicators import Indicator as ind
 from data_loader import Data_loader as dl
 class Signal:
     @staticmethod

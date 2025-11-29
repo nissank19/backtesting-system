@@ -1,9 +1,11 @@
 import numpy
 from datetime import datetime
 import pandas as pd
+from Signal import Signal
+import Backtester
 import data_loader
 from data_loader import Data_loader
-
+from Indicators import Indicator
 
 class Performance():
     def __init__(self,portfolio_value_history):
@@ -69,12 +71,36 @@ class Performance():
 
 ##for later implement win rate, rolling volatility
 
+# Initialize backtester
+# Load and prepare data
+loader = Data_loader("AAPL")
+df = loader.load()
+df = loader.returns(df)                   # optional, if you calculate returns
+df = Indicator.EMA(df, window=10)         # compute EMA
+df = Signal.generate_emasignal(df, "EMA_10")  # generate 'signal' column
 
-hutto= Data_loader("AAPL")
-df=hutto.load()
-perf=Performance([1000])
-perfz=perf.maxdrawdown("6/10/2010","9/10/2010",df=df)
-print(perfz)
+# Initialize and run backtester
+bt = Backtester.backtester()
+bt.runback(df=df)  # DataFrame now contains 'signal'
+
+# Create performance object
+perf = Performance(bt.portfolio_value_history)
+
+# Compute metrics
+total_return = perf.totalreturns()
+daily_returns = perf.get_daily_returns()
+volatility = perf.volatility()
+sharpe = perf.sharpratio(riskfreerate=0)
+cagr = perf.CAGR(years=10)
+max_dd = perf.maxdrawdown("2010-6-9", "2019-9-6", df)
+
+# Print results
+print("Total Return:", total_return)
+print("Volatility:", volatility)
+print("Sharpe Ratio:", sharpe)
+print("CAGR:", cagr)
+print("Max Drawdown:", max_dd)
+
 
 
 

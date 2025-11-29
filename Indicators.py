@@ -1,5 +1,5 @@
 import pandas as pd
-class Indicators:
+class Indicator:
     @staticmethod
     def SMA(df,window):
         df[f"SMA_{window}"] = df['adj_close'].rolling(window).mean() #calculated by adding up the closing prices of an asset over a specific
