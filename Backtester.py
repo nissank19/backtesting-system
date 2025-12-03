@@ -1,41 +1,25 @@
-class backtester:
-    def runback(self,df,inital=1000,share=0):
-        self.portfolio_value_history = []
-        self.cash=inital
-        self.share=share
-        for index, row in df.iterrows():
-            if row["signal"]==1:
-                self.buy(row["adj_close"])
-                total=self.cash+self.share*row["adj_close"]
-                self.portfolio_value_history.append(total)
-            elif row["signal"]==-1:
-                self.sell(row["adj_close"])
-                total = self.cash + self.share *row ["adj_close"]
-                self.portfolio_value_history.append(total)
-            else: print("hold")
+class Backtester:
+    def runback(self, df, initial=1000):
+        self.cash = initial
+        self.shares = 0
+        self.value = []
 
+        position = 0
 
+        for _, row in df.iterrows():
+            price = row["adj_close"]
+            signal = row["signal"]
 
+            if position == 0 and signal == 1:
+                qty = self.cash / price
+                self.shares = qty
+                self.cash = 0
+                position = 1
 
+            elif position == 1 and signal == -1:
+                self.cash = self.shares * price
+                self.shares = 0
+                position = 0
 
-    def buy(self,price):
-        if self.cash<=0:
-            print("no cash")
-            return
-        else:
-         sharestobuy=self.cash/price
-         self.cash=0
-         self.share+=sharestobuy
-    def sell(self,price):
-        if self.share==0:
-            print('no shares')
-        else:
-            sharstosellprice=self.share*price
-            self.cash+=sharstosellprice
-            self.share=0
-
-    def returns(self):
-        inital=self.portfolio_value_history[0]
-        final=self.portfolio_value_history[-1]
-        return (final-inital)/inital
-
+            v = self.cash + self.shares * price
+            self.value.append(v)

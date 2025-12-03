@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="359721c3-10eb-4db0-ba13-006eb0e9597f" name="Changes" comment="sharp ratio implemented (mean-riskfree)/std, max drawdown">
-      <change afterPath="$PROJECT_DIR$/tester.py" afterDir="false" />
+    <list default="true" id="359721c3-10eb-4db0-ba13-006eb0e9597f" name="Changes" comment="implementeed a tester.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backtester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backtester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Indicators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Indicators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Performance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Performance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Signal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Signal.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,18 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in tester.py.executor": "Run",
-    "Python.Performance.executor": "Run",
-    "Python.Signal.executor": "Run",
-    "Python.data_loader.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/fabia/Documents/backtesting-system",
-    "settings.editor.selected.configurable": "editor.preferences.completion"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in tester.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Performance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Signal.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_loader.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fabia/Documents/backtesting-system&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -133,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764405863647</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implementeed a tester.py">
+      <option name="closed" value="true" />
+      <created>1764407148806</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1764407148806</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -144,6 +148,7 @@
     <MESSAGE value="changed returns to totalreturn" />
     <MESSAGE value="sharp ratio implemented (mean-riskfree)/std" />
     <MESSAGE value="sharp ratio implemented (mean-riskfree)/std, max drawdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="sharp ratio implemented (mean-riskfree)/std, max drawdown" />
+    <MESSAGE value="implementeed a tester.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementeed a tester.py" />
   </component>
 </project>
